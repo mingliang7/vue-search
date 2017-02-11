@@ -1,0 +1,15 @@
+{
+  "name": "test-vue",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "babel-runtime": "6.18.0",
+    "lodash": "^4.17.4",
+    "meteor-node-stubs": "~0.2.0",
+    "vue": "^2.1.10",
+    "vue-meteor-tracker": "^1.0.3"
+  },
+  "devDependencies": {}
+}

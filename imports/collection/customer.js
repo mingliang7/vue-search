@@ -1,0 +1,1 @@
+export const Customer = new Mongo.Collection('customer');
