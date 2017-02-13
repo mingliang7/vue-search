@@ -19,7 +19,7 @@
         <div class="row">
             <div v-if="customerExist">
                 <div v-show="!busy">
-                    <customer-component v-for="customer in customers" :customer="customer"></customer-component>
+                    <customer-component  v-for="customer in customers" :customer="customer" v-on:bindCustomer="viewCustomer"></customer-component>
                 </div>
             </div>
             <div v-else>
@@ -77,7 +77,10 @@
                     });
                 },
                 500
-            )
+            ),
+            viewCustomer(val){
+                this.$router.push({ name: 'viewCustomer', params: { customerId: val }})
+            }
         }
     }
 </script>

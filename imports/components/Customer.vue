@@ -1,5 +1,5 @@
 <template>
-    <div class="customer-component">
+    <div class=" cursor-pointer customer-component" @click="viewCustomer(customer._id)">
         <div class="col s3">
             <div class="card">
                 <div class="card-content ">
@@ -14,6 +14,17 @@
     export default {
         props: {
             customer: Object
+        },
+        methods: {
+            viewCustomer(val){
+                this.$emit('bindCustomer', val)
+            }
         }
     }
 </script>
+
+<style scoped>
+    .cursor-pointer{
+        cursor: pointer;
+    }    
+</style>

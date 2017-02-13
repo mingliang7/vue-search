@@ -10,5 +10,8 @@ Meteor.methods({
         {email: {$regex: q}},
         {name: {$regex: q}}
     ]}, {limit: 10}).fetch()
+  },
+  fetchCustomer(id){
+    return Customer.findOne(id);
   }
 })

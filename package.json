@@ -9,7 +9,8 @@
     "lodash": "^4.17.4",
     "meteor-node-stubs": "~0.2.0",
     "vue": "^2.1.10",
-    "vue-meteor-tracker": "^1.0.3"
+    "vue-meteor-tracker": "^1.0.3",
+    "vue-router": "^2.2.0"
   },
   "devDependencies": {}
 }
